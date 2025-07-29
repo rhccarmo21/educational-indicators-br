@@ -1,2 +1,2 @@
 # educational-indicators-br
-Análise de ENEM, IDEB e INEP
+Estudo detalhado dos indicadores educacionais brasileiros, relacionando desempenho escolar com fatores socioeconômicos, para identificar áreas prioritárias de intervenção.
