@@ -1,274 +1,232 @@
+📚 Educational Indicators BR
 
-# 📚 Educational Indicators BR
+  
 
-[![Licença MIT](https://img.shields.io/badge/Licença-MIT-green)](https://pt.wikipedia.org/wiki/Licen%C3%A7a_MIT)
-[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/downloads/)
-[![GeoPandas](https://img.shields.io/badge/GeoPandas-Geospatial_analysis-blue)](https://geopandas.org/)
+📝 Resumo Rápido
 
-## 📌 Sumário
-1. [Visão Geral](#-visão-geral)  
-2. [Indicadores Principais](#-indicadores-principais)
-3. [Fatores de Influência](#-fatores-de-influência)
-4. [Fontes de Dados](#-fontes-de-dados)
-5. [Metodologia](#-metodologia)
-6. [Instalação](#-instalação)
-7. [Como Usar](#-como-usar)
-8. [Casos de Estudo](#-casos-de-estudo)
-9. [Contribuição](#-contribuição)
-10. [Contato](#-contato)
+Este projeto integra indicadores educacionais brasileiros com dados socioeconômicos para identificar desigualdades, monitorar desempenho escolar e mapear áreas prioritárias para intervenção.
+Ideal para gestores públicos, pesquisadores e analistas de dados que precisam de uma visão abrangente e georreferenciada da educação básica no Brasil.
+
 
 ---
 
-## 🌐 Visão Geral
+📌 Sumário
 
-Plataforma analítica que integra indicadores educacionais brasileiros com dados socioeconômicos para:
+1. Comece Aqui
 
-- 🎯 **Identificar desigualdades educacionais** em nível municipal
-- 📊 **Relacionar desempenho escolar** com contexto social
-- 🗺️ **Mapear áreas prioritárias** para intervenção
-- 📈 **Monitorar evolução temporal** (2007-2023)
 
-**Aplicações:**
-- Formulação de políticas educacionais
-- Alocação de recursos do FUNDEB
-- Estudos de impacto social
-- Planejamento pedagógico regionalizado
+2. Visão Geral
 
----
 
-## 📊 Indicadores Principais
+3. Indicadores Principais
 
-### Educacionais
-| Indicador | Fórmula | Fonte | Escala |
-|-----------|---------|-------|--------|
-| IDEB | `(Proficiência) × (Fluxo)` | INEP | Escola |
-| Taxa de Abandono | `(Matrículas Iniciais - Finais)/Iniciais` | Censo Escolar | Municipal |
-| Distorção Idade-Série | `Alunos com atraso ≥2 anos/Total` | INEP | Estadual |
 
-### Socioeconômicos
-| Indicador | Fonte | Relação Educacional |
-|-----------|-------|--------------------|
-| IDH-M | PNUD | Correlação +0.72 com IDEB |
-| % Bolsa Família | MDS | Associado a evasão |
-| Densidade Escolar | IBGE | Acesso à educação |
+4. Fontes de Dados
 
-```python
-from edu_analysis import calculate_educational_gap
 
-gap = calculate_educational_gap(
-    indicator='ideb',
-    reference='capital',
-    comparison='interior'
-)
-```
+5. Metodologia
+
+
+6. Casos de Estudo
+
+
+7. Estrutura do Projeto
+
+
+8. Contribuição
+
+
+9. Contato
+
+
+
 
 ---
 
-## 📂 Fontes de Dados
+🚦 Comece Aqui
 
-| Fonte | Dados | Periodicidade | Acesso |
-|-------|-------|--------------|--------|
-| INEP (Censo Escolar) | Matrículas, Infraestrutura | Anual | Microdados |
-| Prova Brasil/SAEB | Desempenho | Bienal | API |
-| IBGE (PNAD Contínua) | Educação domiciliar | Trimestral | FTP |
-| MEC (IDEB) | Qualidade educacional | Bienal | Portal |
+1. Clone o repositório
 
-**Estrutura Básica:**
-```python
-import pandas as pd
+git clone https://github.com/rhccarmo21/educational-indicators-br.git
+cd educational-indicators-br
 
-df = pd.read_csv('ideb_municipal_2021.csv')
-print(df.groupby('UF')['IDEB'].describe())
-```
 
----
+2. Instale dependências
 
-## 🔍 Fatores de Influência
+pip install -r requirements.txt
 
-### Principais Variáveis Analisadas
-1. **Infraestrutura Escolar**:
-   - Laboratórios de ciências
-   - Acesso à internet
 
-2. **Contexto Familiar**:
-   - Escolaridade dos pais
-   - Renda per capita
+3. Baixe microdados
 
-3. **Gestão Educacional**:
-   - Experiência dos diretores
-   - Rotatividade docente
+Censo Escolar – INEP
 
-4. **Territoriais**:
-   - Distância até escolas
-   - Violência no entorno
+PNAD Contínua – IBGE
+
+
+
+4. Execute o pipeline
+
+python scripts/build_dataset.py
+
+
+5. Gere mapas e análises
+
+python scripts/generate_maps.py
+
+
+
 
 ---
 
-## ⚙️ Metodologia
+🌐 Visão Geral
 
-1. **Análise Multinível**:
-   ```python
-   from edu_modeling import run_multilevel_analysis
+🎯 Identificar desigualdades educacionais em nível municipal
 
-   results = run_multilevel_analysis(
-       educational_outcome='ideb',
-       predictors=['idhm', 'teacher_ratio', 'family_income'],
-       levels=['school', 'municipality']
-   )
-   ```
+📊 Relacionar desempenho escolar com contexto social
 
-2. **Geoestatística**:
-   ```python
-   from edu_geo import identify_priority_areas
+🗺️ Mapear áreas prioritárias para intervenção
 
-   priority_map = identify_priority_areas(
-       indicators=['ideb', 'dropout_rate'],
-       thresholds=[4.5, 0.1]
-   )
-   ```
+📈 Monitorar evolução temporal (2007–2023)
 
-3. **Séries Temporais**:
-   - Tendências educacionais pós-PNE
-   - Impacto de políticas específicas
+
+Aplicações: políticas educacionais, FUNDEB, estudos de impacto social, planejamento pedagógico regionalizado.
+
 
 ---
 
-## 🛠️ Instalação
+📊 Indicadores Principais (Resumo)
 
-### Via pip
-```bash
-pip install edu-indicators-br
-```
+Educacionais
 
-### Com módulos geoespaciais
-```bash
-pip install edu-indicators-br[geo]
-```
+IDEB = (Proficiência × Fluxo) — Fonte: INEP
 
-### Docker
-```bash
-docker pull inep/edu-analytics:latest
-```
+Taxa de Abandono = (Matrículas Iniciais − Finais)/Iniciais — Fonte: Censo Escolar
+
+Distorção Idade–Série — Fonte: INEP
+
+
+Socioeconômicos
+
+IDH-M — Correlação +0,72 com IDEB
+
+% Bolsa Família — Associado a evasão
+
+Densidade Escolar — Acesso à educação
+
+
+> Para ver as fórmulas completas e escalas, acesse docs/indicadores.md.
+
+
+
 
 ---
 
-## 🚀 Como Usar
+📂 Fontes de Dados
 
-### 1. Análise Descritiva
-```python
+INEP — Censo Escolar, Prova Brasil/SAEB
+
+IBGE — PNAD Contínua
+
+MEC — IDEB
+
+PNUD — IDH-M
+
+
+
+---
+
+⚙️ Metodologia
+
+1. Análise Multinível — Relações entre aluno, escola e município
+
+
+2. Geoestatística — Identificação de áreas prioritárias
+
+
+3. Séries Temporais — Tendências e impactos de políticas
+
+
+
+
+---
+
+🚀 Como Usar
+
+Uso Rápido
+
 from edu_analysis import EducationReport
 
 report = EducationReport(state='BA', year=2021)
 report.generate(output_file='bahia_education.pdf')
-```
 
-### 2. Painel Interativo
-```bash
+Uso Avançado
+
 streamlit run app/edu_dashboard.py
-```
 
-### 3. API de Consulta
-```python
 from edu_api import get_school_indicators
-
 indicators = get_school_indicators(
     school_id=123456,
     indicators=['ideb', 'infrastructure_index']
 )
-```
+
 
 ---
 
-## 🏫 Casos de Estudo
+🏫 Casos de Estudo (2021)
 
-### Municípios com Maior Desigualdade (2021)
-| Posição | Município | UF | IDEB Urbano | IDEB Rural | Diferença |
-|---------|-----------|----|-------------|------------|-----------|
-| 1 | Monte Alegre | PA | 5.8 | 3.2 | -2.6 |
-| 2 | Baía Formosa | RN | 5.6 | 3.1 | -2.5 |
+Município	UF	IDEB Urbano	IDEB Rural	Diferença
 
-**Achados Relevantes:**
-- Escolas com biblioteca têm 23% menos evasão
-- 1h adicional de transporte reduz frequência em 11%
+Monte Alegre	PA	5.8	3.2	-2.6
+Baía Formosa	RN	5.6	3.1	-2.5
+
+
+Insights
+
+Escolas com biblioteca → 23% menos evasão
+
++1h de transporte → -11% frequência
+
+
 
 ---
 
-## 🗂 Estrutura do Projeto
+🗂 Estrutura do Projeto
 
-```
 edu-indicators-br/
 ├── data/
-│   ├── raw/              # Microdados INEP/IBGE
-│   ├── processed/        # Indicadores calculados
+│   ├── raw/          # Microdados INEP/IBGE
+│   ├── processed/    # Indicadores calculados
 ├── notebooks/
-│   ├── pca_analysis.ipynb
-├── edu_analysis/
-│   ├── preprocessing/    # Pipeline de dados
-│   ├── modeling/         # Modelos estatísticos
-│   ├── geo/             # Ferramentas espaciais
+├── edu_analysis/     # Pipelines, modelos e geotools
 ├── docs/
-│   ├── methodology.pdf  # Documentação técnica
 └── tests/
-```
+
 
 ---
 
-## 🤝 Contribuição
+🤝 Contribuição
 
-1. **Adicionar Indicadores**:
-   ```python
-   class NewIndicator(EducationMetric):
-       def __init__(self):
-           self.name = "Índice de Equidade"
-           self.formula = "(Variância de desempenho)/Média"
-   ```
+Pull requests são bem-vindos!
+Sugestões: adicionar novos indicadores, melhorar visualizações, ampliar estudos de caso.
 
-2. **Padrões de Código**:
-   ```python
-   def normalize_ideb(raw_score: float) -> float:
-       """Normaliza IDEB para escala 0-1 considerando metas nacionais"""
-       return (raw_score - 3) / (7 - 3)  # Meta 2022 básica vs excelência
-   ```
-
-3. **Testes**:
-   ```bash
-   pytest tests/test_priority_identification.py -v
-   ```
 
 ---
 
-## 📧 Contato
+📧 Contato
 
-**Instituto Nacional de Estudos Educacionais**  
-[pesquisa.indicadores@inep.gov.br](mailto:pesquisa.indicadores@inep.gov.br)
+Roberto Cunha
+GitHub: rhccarmo21
+LinkedIn: linkedin.com/in/seu-perfil
+Email: seu.email@exemplo.com
 
-**Parcerias Acadêmicas**  
-[parcerias@inep.gov.br](mailto:parcerias@inep.gov.br)
-
-**Acesso aos Dados**  
-[![Portal INEP](https://img.shields.io/badge/Dados_Educacionais-Acesse_Aqui-blue)](https://www.gov.br/inep/pt-br)
 
 ---
 
-💡 **Para Gestores Educacionais:**  
-Baixe nosso kit de intervenções comprovadas:  
-[📘 Estratégias Baseadas em Evidências](docs/estrategias_educacionais.pdf)
+💡 Para Gestores Educacionais
+Acesse nosso kit de estratégias baseadas em evidências: docs/estrategias_educacionais.pdf
 
-> **Nota Técnica:** Todos os indicadores seguem as diretrizes do PNE (Plano Nacional de Educação 2014-2024).
-```
 
-### Destaques Específicos:
+---
 
-1. **Integração INEP-IBGE**: Cruzamento preciso de dados educacionais e socioeconômicos
-2. **Abordagem Multinível**: Análise simultânea em nível aluno/escola/município
-3. **Foco em Equidade**: Identificação de grupos vulneráveis
-4. **Ferramentas para Gestão**: Priorização de áreas para intervenção
-5. **Visualização Geográfica**: Mapas de calor de desigualdades educacionais
+Se você quiser, posso também criar a versão em inglês para aumentar o alcance do repositório e deixá-lo pronto para atrair recrutadores de fora do Brasil. Isso ampliaria muito seu público.
 
-### Para Implementação:
-
-1. Baixar microdados do Censo Escolar (INEP)
-2. Cruzar com dados do IBGE e programas sociais
-3. Mapear políticas municipais de educação
-4. Implementar painéis de acompanhamento em tempo real
-5. Calibrar modelos com dados locais específicos
