@@ -1,232 +1,125 @@
-📚 Educational Indicators BR
+# 📚 Educational Indicators BR
 
-  
-
-📝 Resumo Rápido
-
-Este projeto integra indicadores educacionais brasileiros com dados socioeconômicos para identificar desigualdades, monitorar desempenho escolar e mapear áreas prioritárias para intervenção.
-Ideal para gestores públicos, pesquisadores e analistas de dados que precisam de uma visão abrangente e georreferenciada da educação básica no Brasil.
-
+> **Resumo Executivo**  
+> Integração de indicadores educacionais brasileiros com dados socioeconômicos para identificar desigualdades, monitorar desempenho escolar e mapear áreas prioritárias. Ferramenta essencial para gestores públicos, pesquisadores e analistas de dados que necessitam de análises georreferenciadas da educação básica no Brasil (2007-2023).
 
 ---
 
-📌 Sumário
+## 🚦 Roteiro de Execução Rápida
 
-1. Comece Aqui
+Siga estes passos para reproduzir a análise:
 
-
-2. Visão Geral
-
-
-3. Indicadores Principais
-
-
-4. Fontes de Dados
-
-
-5. Metodologia
-
-
-6. Casos de Estudo
-
-
-7. Estrutura do Projeto
-
-
-8. Contribuição
-
-
-9. Contato
-
-
-
-
----
-
-🚦 Comece Aqui
-
-1. Clone o repositório
-
+```bash
+# 1. Clonar repositório
 git clone https://github.com/rhccarmo21/educational-indicators-br.git
 cd educational-indicators-br
 
-
-2. Instale dependências
-
+# 2. Instalar dependências
 pip install -r requirements.txt
 
+# 3. Baixar microdados (links diretos)
+wget -P data/raw/ https://dados.inep.gov.br/dataset/censo-escolar
+wget -P data/raw/ https://ftp.ibge.gov.br/PNAD_Continua
 
-3. Baixe microdados
-
-Censo Escolar – INEP
-
-PNAD Contínua – IBGE
-
-
-
-4. Execute o pipeline
-
+# 4. Processar dados
 python scripts/build_dataset.py
 
-
-5. Gere mapas e análises
-
-python scripts/generate_maps.py
-
-
-
+# 5. Gerar visualizações
+python scripts/generate_maps.py --state=SP --year=2022
+```
 
 ---
 
-🌐 Visão Geral
+## 🎯 Níveis de Uso
 
-🎯 Identificar desigualdades educacionais em nível municipal
-
-📊 Relacionar desempenho escolar com contexto social
-
-🗺️ Mapear áreas prioritárias para intervenção
-
-📈 Monitorar evolução temporal (2007–2023)
-
-
-Aplicações: políticas educacionais, FUNDEB, estudos de impacto social, planejamento pedagógico regionalizado.
-
-
----
-
-📊 Indicadores Principais (Resumo)
-
-Educacionais
-
-IDEB = (Proficiência × Fluxo) — Fonte: INEP
-
-Taxa de Abandono = (Matrículas Iniciais − Finais)/Iniciais — Fonte: Censo Escolar
-
-Distorção Idade–Série — Fonte: INEP
-
-
-Socioeconômicos
-
-IDH-M — Correlação +0,72 com IDEB
-
-% Bolsa Família — Associado a evasão
-
-Densidade Escolar — Acesso à educação
-
-
-> Para ver as fórmulas completas e escalas, acesse docs/indicadores.md.
-
-
-
-
----
-
-📂 Fontes de Dados
-
-INEP — Censo Escolar, Prova Brasil/SAEB
-
-IBGE — PNAD Contínua
-
-MEC — IDEB
-
-PNUD — IDH-M
-
-
-
----
-
-⚙️ Metodologia
-
-1. Análise Multinível — Relações entre aluno, escola e município
-
-
-2. Geoestatística — Identificação de áreas prioritárias
-
-
-3. Séries Temporais — Tendências e impactos de políticas
-
-
-
-
----
-
-🚀 Como Usar
-
-Uso Rápido
-
+### 🔵 Nível Rápido (Relatórios Pré-Formatados)
+```python
 from edu_analysis import EducationReport
 
-report = EducationReport(state='BA', year=2021)
-report.generate(output_file='bahia_education.pdf')
+report = EducationReport(
+    state='BA', 
+    year=2021,
+    indicators=['ideb', 'evasao']
+)
+report.generate(output_file='relatorio_bahia.pdf')
+```
 
-Uso Avançado
-
-streamlit run app/edu_dashboard.py
-
+### ⚡ Nível Avançado (API e Dashboard)
+```python
+# Acessar API de indicadores
 from edu_api import get_school_indicators
-indicators = get_school_indicators(
+
+indicadores = get_school_indicators(
     school_id=123456,
-    indicators=['ideb', 'infrastructure_index']
+    indicators=['ideb', 'infraestrutura']
 )
 
+# Executar dashboard interativo
+streamlit run app/edu_dashboard.py
+```
 
 ---
 
-🏫 Casos de Estudo (2021)
+## 📊 Indicadores Principais
+| Categoria          | Indicador                 | Fórmula                          | Fonte       |
+|---------------------|---------------------------|----------------------------------|-------------|
+| **Educacional**     | IDEB                     | `(Proficiência × Fluxo)`         | INEP/MEC    |
+|                     | Taxa de Abandono         | `(Mat.Iniciais - Mat.Finais)/Mat.Iniciais` | Censo Escolar |
+| **Socioeconômico**  | % Bolsa Família          | `Famílias beneficiadas/População`| IBGE        |
+|                     | Densidade Escolar        | `Escolas/Habitantes`             | IBGE/INEP   |
 
-Município	UF	IDEB Urbano	IDEB Rural	Diferença
-
-Monte Alegre	PA	5.8	3.2	-2.6
-Baía Formosa	RN	5.6	3.1	-2.5
-
-
-Insights
-
-Escolas com biblioteca → 23% menos evasão
-
-+1h de transporte → -11% frequência
-
-
+> 📌 Fórmulas completas: [docs/indicadores.md](docs/indicadores.md)
 
 ---
 
-🗂 Estrutura do Projeto
+## 🌐 Fontes de Dados
+| Entidade | Conjunto de Dados               | Período     |
+|----------|---------------------------------|-------------|
+| INEP     | Censo Escolar                   | 2007-2023   |
+| IBGE     | PNAD Contínua                   | 2016-2023   |
+| PNUD     | IDH Municipal                   | 2010-2020   |
 
+---
+
+## 🛠️ Estrutura do Projeto
+```bash
 edu-indicators-br/
 ├── data/
-│   ├── raw/          # Microdados INEP/IBGE
-│   ├── processed/    # Indicadores calculados
-├── notebooks/
-├── edu_analysis/     # Pipelines, modelos e geotools
-├── docs/
-└── tests/
-
-
----
-
-🤝 Contribuição
-
-Pull requests são bem-vindos!
-Sugestões: adicionar novos indicadores, melhorar visualizações, ampliar estudos de caso.
-
+│   ├── raw/          # Microdados brutos
+│   └── processed/    # Dados tratados
+├── notebooks/        # Análises exploratórias
+├── edu_analysis/     # Pipelines e modelos 
+└── app/              # Dashboard Streamlit
+```
 
 ---
 
-📧 Contato
-
-Roberto Cunha
-GitHub: rhccarmo21
-LinkedIn: linkedin.com/in/seu-perfil
-Email: seu.email@exemplo.com
-
-
----
-
-💡 Para Gestores Educacionais
-Acesse nosso kit de estratégias baseadas em evidências: docs/estrategias_educacionais.pdf
-
+## 🤝 Contribuição
+Sugestões bem-vindas para:
+- Novos indicadores educacionais
+- Melhorias nas visualizações
+- Expansão de estudos de caso  
+*(Ver [CONTRIBUTING.md](CONTRIBUTING.md))*
 
 ---
 
-Se você quiser, posso também criar a versão em inglês para aumentar o alcance do repositório e deixá-lo pronto para atrair recrutadores de fora do Brasil. Isso ampliaria muito seu público.
+## 📧 Contato Pessoal
+**Roberto Cunha**  
+[![GitHub](https://img.shields.io/badge/GitHub-rhccarmo21-blue)](https://github.com/rhccarmo21)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue)](https://linkedin.com/in/seu-perfil)  
+✉️ seu.email@exemplo.com
 
+> 💡 **Para gestores educacionais:**  
+> [Kit de estratégias baseadas em evidências](docs/estrategias_educacionais.pdf)
+```
+
+Principais melhorias implementadas:
+1. **Hierarquia visual clara** com separação por seções
+2. **Destaque imediato para execução** com bloco de código replicável
+3. **Divisão explícita entre níveis de uso** (rápido vs avançado)
+4. **Tabelas organizadas** para indicadores e fontes de dados
+5. **Redução de ícones excessivos** mantendo apenas os essenciais
+6. **Contato pessoal destacado** com badges clicáveis
+7. **Fluxo lógico** do geral (resumo) para específico (detalhes técnicos)
+
+Versão
