@@ -22,6 +22,7 @@ wget -P data/raw/ https://dados.inep.gov.br/dataset/censo-escolar
 wget -P data/raw/ https://ftp.ibge.gov.br/PNAD_Continua
 
 # 4. Processar dados
+# Obs.: edite 'scripts/build_dataset.py' para definir estado/ano específicos
 python scripts/build_dataset.py
 
 # 5. Gerar visualizações
@@ -61,23 +62,23 @@ streamlit run app/edu_dashboard.py
 ---
 
 ## 📊 Indicadores Principais
-| Categoria          | Indicador                 | Fórmula                          | Fonte       |
-|---------------------|---------------------------|----------------------------------|-------------|
-| **Educacional**     | IDEB                     | `(Proficiência × Fluxo)`         | INEP/MEC    |
-|                     | Taxa de Abandono         | `(Mat.Iniciais - Mat.Finais)/Mat.Iniciais` | Censo Escolar |
-| **Socioeconômico**  | % Bolsa Família          | `Famílias beneficiadas/População`| IBGE        |
-|                     | Densidade Escolar        | `Escolas/Habitantes`             | IBGE/INEP   |
+| Categoria          | Indicador           | Fórmula                              | Fonte         |
+|--------------------|---------------------|--------------------------------------|---------------|
+| **Educacional**    | IDEB               | `(Proficiência × Fluxo)`             | INEP/MEC      |
+|                    | Taxa de Abandono   | `(Mat.Iniciais - Mat.Finais)/Mat.Iniciais` | Censo Escolar |
+| **Socioeconômico**| % Bolsa Família    | `Famílias beneficiadas/População`    | IBGE          |
+|                    | Densidade Escolar  | `Escolas/Habitantes`                 | IBGE/INEP     |
 
 > 📌 Fórmulas completas: [docs/indicadores.md](docs/indicadores.md)
 
 ---
 
 ## 🌐 Fontes de Dados
-| Entidade | Conjunto de Dados               | Período     |
-|----------|---------------------------------|-------------|
-| INEP     | Censo Escolar                   | 2007-2023   |
-| IBGE     | PNAD Contínua                   | 2016-2023   |
-| PNUD     | IDH Municipal                   | 2010-2020   |
+| Entidade | Conjunto de Dados   | Período     |
+|----------|---------------------|-------------|
+| INEP     | Censo Escolar       | 2007-2023   |
+| IBGE     | PNAD Contínua       | 2016-2023   |
+| PNUD     | IDH Municipal       | 2010-2020   |
 
 ---
 
@@ -97,29 +98,18 @@ edu-indicators-br/
 ## 🤝 Contribuição
 Sugestões bem-vindas para:
 - Novos indicadores educacionais
-- Melhorias nas visualizações
+- Melhorias nas visualizações  
 - Expansão de estudos de caso  
-*(Ver [CONTRIBUTING.md](CONTRIBUTING.md))*
+
+📌 Ver [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 
 ## 📧 Contato Pessoal
 **Roberto Cunha**  
-[![GitHub](https://img.shields.io/badge/GitHub-rhccarmo21-blue)](https://github.com/rhccarmo21)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue)](https://linkedin.com/in/seu-perfil)  
-✉️ seu.email@exemplo.com
+[![GitHub](https://img.shields.io/badge/GitHub-rhccarmo21-blue)](https://github.com/rhccarmo21)  
+✉️ rhccarmo@gmail.com
 
 > 💡 **Para gestores educacionais:**  
 > [Kit de estratégias baseadas em evidências](docs/estrategias_educacionais.pdf)
 ```
-
-Principais melhorias implementadas:
-1. **Hierarquia visual clara** com separação por seções
-2. **Destaque imediato para execução** com bloco de código replicável
-3. **Divisão explícita entre níveis de uso** (rápido vs avançado)
-4. **Tabelas organizadas** para indicadores e fontes de dados
-5. **Redução de ícones excessivos** mantendo apenas os essenciais
-6. **Contato pessoal destacado** com badges clicáveis
-7. **Fluxo lógico** do geral (resumo) para específico (detalhes técnicos)
-
-Versão
