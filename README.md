@@ -1,4 +1,3 @@
-```markdown
 # 📚 Educational Indicators BR
 
 <div align="center">
