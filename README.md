@@ -68,18 +68,46 @@ streamlit run app/streamlit/app.py
 
 ## 🗂 Estrutura do Projeto
 ```
+## 📂 Estrutura do Projeto
+
+```text
 .
-├── data/
-│   ├── raw/              # Dados brutos por ano
-│   ├── processed/        # Dados processados (Parquet)
-│   └── consolidated/     # Dataset unificado
-├── scripts/
-│   ├── 1_extract_zips.py # Extração de arquivos
-│   ├── 2_process.py      # Pipeline de ETL
-│   └── 3_consolidate.py  # Consolidação
-└── app/
-    └── streamlit/        # Dashboard interativo
-```
+├── app/                        # 🖥️ Aplicação principal
+│   ├── static/                 # 📦 Assets estáticos (imgs, CSS)
+│   └── streamlit/              # 📊 Dashboard Interativo
+│       ├── app.py              # 🚀 Script principal
+│       └── utils.py            # ⚙️ Funções auxiliares
+│
+├── data/                       # 🗃️ Camadas de dados
+│   ├── raw/                    # 💽 Dados brutos (ZIP/CSV)
+│   │   ├── 2020/               # 📅 Dados por ano
+│   │   └── 2021/
+│   ├── processed/              # 🧹 Dados tratados
+│   └── consolidated/           # 🔗 Dataset unificado
+│
+├── docs/                       # 📚 Documentação
+│   ├── metrics/                # 📈 Métricas calculadas
+│   └── indicators.md           # 📝 Metodologia
+│
+├── notebooks/                  # 🔍 Análises exploratórias
+│   ├── 01-eda.ipynb            # 📊 Análise inicial
+│   └── 02-models.ipynb         # 🤖 Modelagem
+│
+├── scripts/                    # ⚙️ Automação
+│   ├── data_processing/        # 🛠️ Pipelines
+│   │   ├── 1_extract.py        # 📦 Extração
+│   │   └── 2_transform.py      # ♻️ Transformação
+│   └── utils/                  # 🧰 Utilitários
+│       └── helpers.py          # 🛠️ Funções comuns
+│
+├── tests/                      # 🧪 Testes
+│   ├── unit/                   # 🧩 Testes unitários
+│   └── integration/            # 🔗 Testes integrados
+│
+├── .gitignore                  # 🙈 Ignorar arquivos
+├── Dockerfile                  # 🐳 Containerização
+├── README.md                   # 📖 Você está aqui!
+└── requirements.txt            # 📦 Dependências
 
 ---
 
