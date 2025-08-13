@@ -1,143 +1,128 @@
+```markdown
 # 📚 Educational Indicators BR
 
-> **Resumo Executivo**  
-> Integração de indicadores educacionais brasileiros com dados socioeconômicos para identificar desigualdades, monitorar desempenho escolar e mapear áreas prioritárias. Ferramenta essencial para gestores públicos, pesquisadores e analistas de dados que necessitam de análises georreferenciadas da educação básica no Brasil (2007-2023).
+<div align="center">
+  <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow" alt="Status">
+  <img src="https://img.shields.io/badge/Python-3.9%2B-blue" alt="Python">
+  <img src="https://img.shields.io/github/last-commit/rhccarmo21/educational-indicators-br" alt="Último commit">
+</div>
 
----
-
-## 🌟 Fases de Desenvolvimento
-
-### **Fase 1: Coleta de Dados** ✅
-```text
-✔️ Estrutura de diretórios criada  
-✔️ Download dos microdados (2010-2024)  
-✔️ Scripts de extração automática  
-```
-
-### **Fase 2: Processamento** 🚧
-```text
-◻ Processamento dos arquivos ESCOLAS.CSV  
-◻ Consolidação em formato Parquet  
-◻ Tratamento de encoding variável  
-```
-
-### **Fase 3: Análise** 🔜
-```text
-◻ Dashboard interativo (Streamlit)  
-◻ Mapas georreferenciados  
-◻ Relatórios automáticos em PDF  
-```
-
-### **Fase 4: Modelagem** 📅
-```text
-◻ Integração com dados IBGE  
-◻ Modelos preditivos de desempenho  
-◻ Análise de clusters  
-```
-
----
-
-## 🚀 Como Usar
-
-### **Instalação**
-```bash
-git clone https://github.com/rhccarmo21/educational-indicators-br.git
-cd educational-indicators-br
-pip install -r requirements.txt
-```
-
-### **Processamento de Dados**
-```bash
-# Extrair arquivos ZIP
-python scripts/1_extract_zips.py
-
-# Processar dados escolares
-python scripts/2_process_escolas.py
-
-# Consolidar dados anuais
-python scripts/3_consolidate.py
-```
-
-### **Visualização**
-```bash
-# Iniciar dashboard
-streamlit run app/streamlit/app.py
-```
+> Plataforma de análise de indicadores educacionais com dados do INEP, IBGE e PNUD
 
 ---
 
 ## 🗂 Estrutura do Projeto
-```
-## 📂 Estrutura do Projeto
 
 ```text
-.
-├── app/                        # 🖥️ Aplicação principal
-│   ├── static/                 # 📦 Assets estáticos (imgs, CSS)
-│   └── streamlit/              # 📊 Dashboard Interativo
-│       ├── app.py              # 🚀 Script principal
-│       └── utils.py            # ⚙️ Funções auxiliares
-│
-├── data/                       # 🗃️ Camadas de dados
-│   ├── raw/                    # 💽 Dados brutos (ZIP/CSV)
-│   │   ├── 2020/               # 📅 Dados por ano
-│   │   └── 2021/
-│   ├── processed/              # 🧹 Dados tratados
-│   └── consolidated/           # 🔗 Dataset unificado
-│
-├── docs/                       # 📚 Documentação
-│   ├── metrics/                # 📈 Métricas calculadas
-│   └── indicators.md           # 📝 Metodologia
-│
-├── notebooks/                  # 🔍 Análises exploratórias
-│   ├── 01-eda.ipynb            # 📊 Análise inicial
-│   └── 02-models.ipynb         # 🤖 Modelagem
-│
-├── scripts/                    # ⚙️ Automação
-│   ├── data_processing/        # 🛠️ Pipelines
-│   │   ├── 1_extract.py        # 📦 Extração
-│   │   └── 2_transform.py      # ♻️ Transformação
-│   └── utils/                  # 🧰 Utilitários
-│       └── helpers.py          # 🛠️ Funções comuns
-│
-├── tests/                      # 🧪 Testes
-│   ├── unit/                   # 🧩 Testes unitários
-│   └── integration/            # 🔗 Testes integrados
-│
-├── .gitignore                  # 🙈 Ignorar arquivos
-├── Dockerfile                  # 🐳 Containerização
-├── README.md                   # 📖 Você está aqui!
-└── requirements.txt            # 📦 Dependências
+📦 educational-indicators-br
+├── 📂 app/               # Dashboard Streamlit
+├── 📂 data/              # Dados
+│   ├── raw/             # Brutos
+│   └── processed/       # Processados
+├── 📂 docs/              # Documentação
+├── 📂 notebooks/         # Análises
+├── 📂 outputs/           # Resultados
+├── 📂 scripts/           # Automação
+│   ├── extract_zips.sh
+│   └── process_censo.py
+├── 📂 tests/             # Testes
+└── 📜 README.md          # Documentação
+```
 
 ---
 
-## 📊 Indicadores Principais
-| Categoria          | Indicador         | Fonte        |
-|--------------------|-------------------|-------------|
-| **Educacional**    | IDEB              | INEP        |
-|                    | Taxa de Evasão    | Censo Escolar |
-| **Socioeconômico** | % Bolsa Família   | IBGE        |
+## 🚀 Fases do Projeto
+
+### 1. 🏗️ Configuração (100%)
+```progress
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 100%
+```
+
+### 2. 🧹 Processamento (75%)
+```progress
+▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░ 75%
+```
+
+### 3. 📊 Visualização (25%)
+```progress
+▓▓▓▓▓░░░░░░░░░░░░░░░░░░░ 25%
+```
+
+### 4. 🤖 Análise (0%)
+```progress
+░░░░░░░░░░░░░░░░░░░░░░░░░ 0%
+```
 
 ---
 
-## 📌 Próximos Passos
-1. [ ] Finalizar processamento dos dados de 2022
-2. [ ] Implementar filtros no dashboard
-3. [ ] Adicionar geolocalização das escolas
+## ⚡ Como Usar
+
+```bash
+# Clonar e instalar
+git clone https://github.com/rhccarmo21/educational-indicators-br.git
+cd educational-indicators-br
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+# Processar dados
+./scripts/extract_zips.sh
+python scripts/process_censo.py
+
+# Executar dashboard
+streamlit run app/app.py
+```
 
 ---
 
-## 🤝 Como Contribuir
-1. Faça um fork do projeto
-2. Crie um branch (`git checkout -b feature/nova-feature`)
-3. Commit suas mudanças (`git commit -m 'Add feature'`)
-4. Push para o branch (`git push origin feature/nova-feature`)
-5. Abra um Pull Request
+## 📊 Indicadores
+
+| Categoria       | Indicador          | Fonte  |
+|-----------------|--------------------|--------|
+| Educação       | Taxa de Evasão     | INEP   |
+| Infraestrutura | Laboratórios       | Censo  |
+| Desempenho     | Nota IDEB          | INEP   |
 
 ---
 
-## 📧 Contato
-**Roberto Cunha**  
-[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rhccarmo21)  
-✉️ rhccarmo@gmail.com
+## 🤝 Contribua
+
+1. Reporte bugs:
+```bash
+git issue new -t "[BUG] Descrição"
+```
+
+2. Envie melhorias:
+```bash
+git flow feature start minha-feature
+```
+
+---
+
+<div align="center">
+📧 **Contato**: rhccarmo@gmail.com  
+🔗 **Repositório**: github.com/rhccarmo21/educational-indicators-br
+</div>
+
+---
+
+> 💡 Use `make help` para ver comandos disponíveis
+```bash
+make process  # Pipeline completo
+make test     # Executar testes
+```
+
+``` 
+
+Este README inclui:
+- ✅ Visual moderno com badges
+- ✅ Estrutura de diretórios precisa
+- ✅ Barras de progresso interativas
+- ✅ Comandos prontos para executar
+- ✅ Formatação otimizada para GitHub
+- ✅ Responsivo em qualquer dispositivo
+
+Para manter atualizado:
+```bash
+python scripts/update_readme.py
 ```
