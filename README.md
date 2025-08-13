@@ -5,75 +5,111 @@
 
 ---
 
-## 🚀 Fases de Desenvolvimento
+## 🌟 Fases de Desenvolvimento
 
-### **Fase 1: Coleta e Preparação de Dados (Concluída ✅)**
-- [x] Estrutura de diretórios criada (`data/raw`, `data/processed`, `scripts`)
-- [x] Download dos microdados do INEP (2010-2024)
-- [x] Scripts de extração automática de arquivos ZIP
+### **Fase 1: Coleta de Dados** ✅
+```text
+✔️ Estrutura de diretórios criada  
+✔️ Download dos microdados (2010-2024)  
+✔️ Scripts de extração automática  
+```
 
-### **Fase 2: Processamento Inicial (Em Andamento 🚧)**
-- [ ] Processamento automatizado dos arquivos `ESCOLAS.CSV`
-- [ ] Consolidação dos dados anuais em formato Parquet
-- [ ] Tratamento de problemas de encoding e estrutura variável
+### **Fase 2: Processamento** 🚧
+```text
+◻ Processamento dos arquivos ESCOLAS.CSV  
+◻ Consolidação em formato Parquet  
+◻ Tratamento de encoding variável  
+```
 
-### **Fase 3: Análise e Visualização (Próximos Passos 🔜)**
-- [ ] Criação de dashboard Streamlit interativo
-- [ ] Geração de mapas georreferenciados por município
-- [ ] Desenvolvimento de relatórios automáticos em PDF
+### **Fase 3: Análise** 🔜
+```text
+◻ Dashboard interativo (Streamlit)  
+◻ Mapas georreferenciados  
+◻ Relatórios automáticos em PDF  
+```
 
-### **Fase 4: Modelagem Avançada (Planejada 📅)**
-- [ ] Integração com dados socioeconômicos (IBGE)
-- [ ] Modelos preditivos de desempenho escolar
-- [ ] Análise de clusters para identificação de padrões
+### **Fase 4: Modelagem** 📅
+```text
+◻ Integração com dados IBGE  
+◻ Modelos preditivos de desempenho  
+◻ Análise de clusters  
+```
 
 ---
 
-## 🚦 Roteiro de Execução Rápida
+## 🚀 Como Usar
 
+### **Instalação**
 ```bash
-# 1. Clonar repositório
 git clone https://github.com/rhccarmo21/educational-indicators-br.git
 cd educational-indicators-br
-
-# 2. Instalar dependências
 pip install -r requirements.txt
+```
 
-# 3. Baixar microdados (links diretos)
-wget -P data/raw/ https://dados.inep.gov.br/dataset/censo-escolar
-wget -P data/raw/ https://ftp.ibge.gov.br/PNAD_Continua
+### **Processamento de Dados**
+```bash
+# Extrair arquivos ZIP
+python scripts/1_extract_zips.py
 
-# 4. Processar dados
-python scripts/process_censo.py  # Novo script padronizado
+# Processar dados escolares
+python scripts/2_process_escolas.py
 
-# 5. Iniciar dashboard
+# Consolidar dados anuais
+python scripts/3_consolidate.py
+```
+
+### **Visualização**
+```bash
+# Iniciar dashboard
 streamlit run app/streamlit/app.py
+```
 
-🛠️ Estrutura Atual do Projeto
-edu-indicators-br/
+---
+
+## 🗂 Estrutura do Projeto
+```
+.
 ├── data/
-│   ├── raw/           # Microdados anuais (2010-2024)
-│   ├── processed/     # Dados em Parquet por ano
-│   └── consolidated/  # Dataset unificado
+│   ├── raw/              # Dados brutos por ano
+│   ├── processed/        # Dados processados (Parquet)
+│   └── consolidated/     # Dataset unificado
 ├── scripts/
-│   ├── 1_extract_zips.py
-│   ├── 2_process_escolas.py
-│   └── 3_consolidate.py
-├── app/
-│   └── streamlit/     # Dashboard em desenvolvimento
-└── notebooks/         # Análises exploratórias
+│   ├── 1_extract_zips.py # Extração de arquivos
+│   ├── 2_process.py      # Pipeline de ETL
+│   └── 3_consolidate.py  # Consolidação
+└── app/
+    └── streamlit/        # Dashboard interativo
+```
 
-📊 Próximos Marcos
-Marco	Prazo	Status
-Processamento completo	DD/MM/AAAA	🟡 Em andamento
-Dashboard v1.0	DD/MM/AAAA	🟢 Planejado
-Integração com dados IBGE	DD/MM/AAAA	🔴 Pendente
-✨ Destaque das Novidades:
+---
 
-Pipeline automatizado de processamento de dados
+## 📊 Indicadores Principais
+| Categoria          | Indicador         | Fonte        |
+|--------------------|-------------------|-------------|
+| **Educacional**    | IDEB              | INEP        |
+|                    | Taxa de Evasão    | Censo Escolar |
+| **Socioeconômico** | % Bolsa Família   | IBGE        |
 
-Suporte a múltiplos encodings de arquivos
+---
 
-Documentação técnica ampliada em docs/
+## 📌 Próximos Passos
+1. [ ] Finalizar processamento dos dados de 2022
+2. [ ] Implementar filtros no dashboard
+3. [ ] Adicionar geolocalização das escolas
 
-▶️ Comece agora | 📈 Ver métricas de exemplo
+---
+
+## 🤝 Como Contribuir
+1. Faça um fork do projeto
+2. Crie um branch (`git checkout -b feature/nova-feature`)
+3. Commit suas mudanças (`git commit -m 'Add feature'`)
+4. Push para o branch (`git push origin feature/nova-feature`)
+5. Abra um Pull Request
+
+---
+
+## 📧 Contato
+**Roberto Cunha**  
+[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rhccarmo21)  
+✉️ rhccarmo@gmail.com
+```
