@@ -1,12 +1,46 @@
-# 📚 Educational Indicators BR
+Educational Indicators BR — Inteligência de Dados para Decisões em Educação
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow" alt="Status">
-  <img src="https://img.shields.io/badge/Python-3.9%2B-blue" alt="Python">
-  <img src="https://img.shields.io/github/last-commit/rhccarmo21/educational-indicators-br" alt="Último commit">
-</div>
+Imagine que você possa, em poucos cliques, saber onde a educação está avançando e onde está ficando para trás, quais regiões precisam de atenção urgente e quais políticas funcionaram de fato.
 
-> Plataforma de análise de indicadores educacionais com dados do INEP, IBGE e PNUD
+Este projeto foi desenvolvido para secretários de estado, ministros, parlamentares, gestores municipais, técnicos de órgãos de controle e líderes educacionais que precisam agir com base em evidências — e não apenas em impressões.
+
+Usando dados integrados do INEP, IBGE e PNUD (2010–2014), a plataforma responde a perguntas como:
+
+🔍 Perguntas Estratégicas que Você Poderá Responder
+
+Onde agir primeiro?
+Quais municípios concentram os maiores índices de evasão escolar e queda de desempenho?
+
+Infraestrutura importa?
+Escolas com bibliotecas, laboratórios e internet têm evolução significativa no IDEB?
+
+Desigualdade e aprendizagem
+Como renda per capita e desigualdade social afetam o desempenho dos estudantes?
+
+Impacto de políticas públicas
+O Mais Educação, a expansão de universidades e outros programas tiveram efeito mensurável?
+
+Desempenho regional comparado
+Quais regiões estão avançando mais rápido e por quê?
+
+Projeções para o futuro
+Se nada mudar, como estará o IDEB de cada município nos próximos anos?
+
+Caminhos para reverter a evasão
+Quais fatores mais pesam na permanência ou abandono escolar?
+
+Eficiência de investimento
+Onde o gasto educacional trouxe melhor retorno em resultados de aprendizagem?
+
+🎯 O que você terá em mãos
+
+Painel Interativo para análise por município, estado ou região.
+
+Modelos preditivos para simular cenários e apoiar decisões.
+
+Relatórios claros para orientar políticas públicas com base em evidências.
+
+Mais que um projeto de ciência de dados, o Educational Indicators BR é uma ferramenta de gestão estratégica, feita para transformar números em ação.
 
 ---
 
