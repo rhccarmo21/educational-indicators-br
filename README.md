@@ -52,8 +52,8 @@ Usando dados integrados do **INEP**, **IBGE** e **PNUD** (2010–2024), a plataf
 📦 educational-indicators-br
 ├── 📂 app/               # Dashboard Streamlit
 ├── 📂 data/              # Dados
-│   ├── raw/             # Brutos
-│   └── processed/       # Processados
+│   ├── raw/              # Brutos
+│   └── processed/        # Processados
 ├── 📂 docs/              # Documentação
 ├── 📂 notebooks/         # Análises
 ├── 📂 outputs/           # Resultados
