@@ -110,13 +110,18 @@ streamlit run app/app.py
 
 ---
 
-## 📊 Indicadores
+## 📊 Indicadores Monitorados
 
-| Categoria       | Indicador          | Fonte  |
-|-----------------|--------------------|--------|
-| Educação       | Taxa de Evasão     | INEP   |
-| Infraestrutura | Laboratórios       | Censo  |
-| Desempenho     | Nota IDEB          | INEP   |
+Os indicadores abaixo são a base para diagnósticos, comparações e projeções estratégicas.  
+Eles foram selecionados por seu **alto poder explicativo** sobre a qualidade e os resultados da educação no Brasil.
+
+| Categoria       | Indicador                        | Fonte  | O que Revela |
+|-----------------|----------------------------------|--------|--------------|
+| **Educação**    | **Taxa de Evasão**               | INEP   | Mede a permanência dos estudantes na escola e identifica risco de abandono escolar. |
+| **Infraestrutura** | **Presença de Laboratórios e Bibliotecas** | Censo Escolar | Avalia condições materiais que favorecem a aprendizagem e o desenvolvimento científico. |
+| **Desempenho**  | **Nota IDEB**                    | INEP   | Indicador-síntese da qualidade do ensino, combinando fluxo escolar e desempenho em avaliações padronizadas. |
+
+> Esses indicadores, quando analisados em conjunto com dados socioeconômicos (IBGE, PNUD), permitem identificar **onde intervir primeiro**, **quais políticas funcionam** e **como otimizar recursos públicos**.
 
 ---
 
@@ -147,17 +152,4 @@ make process  # Pipeline completo
 make test     # Executar testes
 ```
 
-``` 
 
-Este README inclui:
-- ✅ Visual moderno com badges
-- ✅ Estrutura de diretórios precisa
-- ✅ Barras de progresso interativas
-- ✅ Comandos prontos para executar
-- ✅ Formatação otimizada para GitHub
-- ✅ Responsivo em qualquer dispositivo
-
-Para manter atualizado:
-```bash
-python scripts/update_readme.py
-```
