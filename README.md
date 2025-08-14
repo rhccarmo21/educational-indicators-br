@@ -4,7 +4,7 @@ Imagine que você possa, em poucos cliques, saber **onde a educação está avan
 
 Este projeto foi desenvolvido para **secretários de estado, ministros, parlamentares, gestores municipais, técnicos de órgãos de controle e líderes educacionais** que precisam **agir com base em evidências** — e não apenas em impressões.  
 
-Usando dados integrados do **INEP**, **IBGE** e **PNUD** (2010–2014), a plataforma responde a perguntas como:  
+Usando dados integrados do **INEP**, **IBGE** e **PNUD** (2010–2024), a plataforma responde a perguntas como:  
 
 ---
 
