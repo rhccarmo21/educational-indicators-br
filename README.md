@@ -1,46 +1,48 @@
-Educational Indicators BR — Inteligência de Dados para Decisões em Educação
+## 📚 Educational Indicators BR — Inteligência de Dados para Decisões em Educação
 
-Imagine que você possa, em poucos cliques, saber onde a educação está avançando e onde está ficando para trás, quais regiões precisam de atenção urgente e quais políticas funcionaram de fato.
+Imagine que você possa, em poucos cliques, saber **onde a educação está avançando e onde está ficando para trás**, quais regiões precisam de atenção urgente e **quais políticas funcionaram de fato**.  
 
-Este projeto foi desenvolvido para secretários de estado, ministros, parlamentares, gestores municipais, técnicos de órgãos de controle e líderes educacionais que precisam agir com base em evidências — e não apenas em impressões.
+Este projeto foi desenvolvido para **secretários de estado, ministros, parlamentares, gestores municipais, técnicos de órgãos de controle e líderes educacionais** que precisam **agir com base em evidências** — e não apenas em impressões.  
 
-Usando dados integrados do INEP, IBGE e PNUD (2010–2014), a plataforma responde a perguntas como:
+Usando dados integrados do **INEP**, **IBGE** e **PNUD** (2010–2014), a plataforma responde a perguntas como:  
 
-🔍 Perguntas Estratégicas que Você Poderá Responder
+---
 
-Onde agir primeiro?
-Quais municípios concentram os maiores índices de evasão escolar e queda de desempenho?
+### 🔍 Perguntas Estratégicas que Você Poderá Responder
 
-Infraestrutura importa?
-Escolas com bibliotecas, laboratórios e internet têm evolução significativa no IDEB?
+1. **Onde agir primeiro?**  
+   Quais municípios concentram os maiores índices de evasão escolar e queda de desempenho?  
 
-Desigualdade e aprendizagem
-Como renda per capita e desigualdade social afetam o desempenho dos estudantes?
+2. **Infraestrutura importa?**  
+   Escolas com bibliotecas, laboratórios e internet têm evolução significativa no IDEB?  
 
-Impacto de políticas públicas
-O Mais Educação, a expansão de universidades e outros programas tiveram efeito mensurável?
+3. **Desigualdade e aprendizagem**  
+   Como renda per capita e desigualdade social afetam o desempenho dos estudantes?  
 
-Desempenho regional comparado
-Quais regiões estão avançando mais rápido e por quê?
+4. **Impacto de políticas públicas**  
+   O Mais Educação, a expansão de universidades e outros programas tiveram efeito mensurável?  
 
-Projeções para o futuro
-Se nada mudar, como estará o IDEB de cada município nos próximos anos?
+5. **Desempenho regional comparado**  
+   Quais regiões estão avançando mais rápido e por quê?  
 
-Caminhos para reverter a evasão
-Quais fatores mais pesam na permanência ou abandono escolar?
+6. **Projeções para o futuro**  
+   Se nada mudar, como estará o IDEB de cada município nos próximos anos?  
 
-Eficiência de investimento
-Onde o gasto educacional trouxe melhor retorno em resultados de aprendizagem?
+7. **Caminhos para reverter a evasão**  
+   Quais fatores mais pesam na permanência ou abandono escolar?  
 
-🎯 O que você terá em mãos
+8. **Eficiência de investimento**  
+   Onde o gasto educacional trouxe melhor retorno em resultados de aprendizagem?  
 
-Painel Interativo para análise por município, estado ou região.
+---
 
-Modelos preditivos para simular cenários e apoiar decisões.
+### 🎯 O que você terá em mãos
 
-Relatórios claros para orientar políticas públicas com base em evidências.
+- **Painel Interativo** para análise por município, estado ou região.  
+- **Modelos preditivos** para simular cenários e apoiar decisões.  
+- **Relatórios claros** para orientar políticas públicas com base em evidências.  
 
-Mais que um projeto de ciência de dados, o Educational Indicators BR é uma ferramenta de gestão estratégica, feita para transformar números em ação.
+> Mais que um projeto de ciência de dados, o **Educational Indicators BR** é uma **ferramenta de gestão estratégica**, feita para transformar números em ação.
 
 ---
 
