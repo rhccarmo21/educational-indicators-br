@@ -69,15 +69,22 @@ O desenvolvimento deste projeto segue uma metodologia orientada por **Inteligên
 
 ---
 
-## Fontes de Dados
+## Fases do Projeto
 
-Este projeto utiliza dados de três fontes principais. Abaixo estão os links oficiais para download e informações sobre cada conjunto:
-
-| Fonte | Descrição | Link de Acesso |
-|-------|-----------|----------------|
-| **Censo Escolar (INEP)** | Levantamento anual de todas as escolas do Brasil, incluindo matrículas, turmas, professores, infraestrutura e localização. | [Download Censo Escolar](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-escolar) |
-| **IDEB (INEP)** | Índice de Desenvolvimento da Educação Básica, que combina desempenho em provas nacionais com taxa de aprovação para medir a qualidade da educação. | [Download IDEB](https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb) |
-| **PNUD / Atlas do Desenvolvimento Humano** | Indicadores socioeconômicos e de desenvolvimento humano por município ou estado, incluindo IDH, renda per capita, escolaridade e outros. | [Download PNUD](https://www.ipea.gov.br/portal/categoria-projetos-e-estatisticas/9941-atlas-do-desenvolvimento-humano-no-brasil) |
+| Fase | Descrição | Status |
+|------|-----------|--------|
+| Estrutura do repositório | Criação das pastas principais (Censo Escolar, IDEB, PNUD, notebooks, scripts, dados processados) | ✅ Concluído |
+| Coleta de dados Censo Escolar | Download da base completa 2010–2024 | ✅ Concluído |
+| Coleta de dados IDEB | Download da base completa 2010–2024 | ⬜ Pendente |
+| Coleta de dados PNUD | Download da base completa 2010–2024 | ⬜ Pendente |
+| Organização de dados | Preparação da estrutura de subpastas por ano | ⬜ Pendente |
+| Notebook de processamento inicial | Desenvolvimento do notebook para o ano de 2010 | ✅ Concluído |
+| Integração de datasets | Merge entre Censo Escolar, IDEB e PNUD | ⬜ Pendente |
+| Análise exploratória | Estatísticas descritivas, gráficos e visualizações iniciais | ⬜ Pendente |
+| Estudos comparativos e rankings | Comparações entre escolas, municípios e estados | ⬜ Pendente |
+| Dashboards e relatórios | Desenvolvimento de dashboards e relatórios consolidados | ⬜ Pendente |
+| Automação do processamento | Scripts para processar automaticamente todos os anos 2010–2024 | ⬜ Pendente |
+| Documentação final | Atualização do README e metodologia detalhada | ⬜ Pendente |
 
 ---
 
