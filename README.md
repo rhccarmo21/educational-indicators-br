@@ -46,6 +46,18 @@ Usando dados integrados do **INEP**, **IBGE** e **PNUD** (2010–2024), a plataf
 
 ---
 
+## Fontes de Dados
+
+Este projeto utiliza dados de três fontes principais. Abaixo estão os links oficiais para download e informações sobre cada conjunto:
+
+| Fonte | Descrição | Link de Acesso |
+|-------|-----------|----------------|
+| **Censo Escolar (INEP)** | Levantamento anual de todas as escolas do Brasil, incluindo matrículas, turmas, professores, infraestrutura e localização. | [Download Censo Escolar](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-escolar) |
+| **IDEB (INEP)** | Índice de Desenvolvimento da Educação Básica, que combina desempenho em provas nacionais com taxa de aprovação para medir a qualidade da educação. | [Download IDEB](https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb) |
+| **PNUD / Atlas do Desenvolvimento Humano** | Indicadores socioeconômicos e de desenvolvimento humano por município ou estado, incluindo IDH, renda per capita, escolaridade e outros. | [Download PNUD](https://www.ipea.gov.br/portal/categoria-projetos-e-estatisticas/9941-atlas-do-desenvolvimento-humano-no-brasil) |
+
+---
+
 ## 🗂 Estrutura do Projeto
 
 ```text
