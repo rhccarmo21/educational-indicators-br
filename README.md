@@ -35,6 +35,29 @@ Usando dados integrados do **INEP**, **IBGE** e **PNUD** (2010–2024), a plataf
    Onde o gasto educacional trouxe melhor retorno em resultados de aprendizagem?  
 
 ---
+## Metodologia
+
+O desenvolvimento deste projeto segue uma metodologia orientada por **Inteligência Artificial**, utilizando o ChatGPT como ferramenta de suporte estratégico, conceitual e prática em diversas etapas:
+
+1. **Formulação de código**  
+   - Criação de scripts e notebooks para processamento, integração e análise de dados.
+   - Desenvolvimento incremental de pipelines, com validação e teste de cada etapa.
+
+2. **Suporte matemático e estatístico**  
+   - Auxílio na definição de métricas, variáveis e modelos explicativos.
+   - Orientação na interpretação de resultados, cruzamentos de dados e análises estatísticas.
+
+3. **Organização do projeto**  
+   - Estruturação de diretórios e arquivos de forma clara e replicável.
+   - Padronização de naming conventions, versão de datasets e arquivos de saída.
+
+4. **Desenvolvimento de análises e visualizações**  
+   - Criação de gráficos, dashboards e relatórios interpretativos.
+   - Facilitação de insights sobre qualidade educacional, desigualdades e correlações com fatores socioeconômicos.
+
+> 💡 Nota: A IA é utilizada como **instrumento de desenvolvimento**, fornecendo suporte técnico e metodológico, mas todas as decisões finais, validações e interpretações ficam sob responsabilidade do pesquisador. Esta abordagem garante precisão, escalabilidade e transparência na construção do projeto.
+
+---
 
 ### 🎯 O que você terá em mãos
 
