@@ -133,7 +133,7 @@ jupyter notebook notebooks/
 
 👤 Desenvolvido por **Roberto Cunha**  
 🔗 [GitHub](https://github.com/rhccarmo21)  
-✉️ roberto@email
+✉️ rhccarmo@gmail.com
 
 ---
 
