@@ -64,9 +64,9 @@ As bases de dados estão disponíveis na página oficial de microdados do INEP:
 
 | Fase                        | Descrição                                                                 | Status |
 |-----------------------------|---------------------------------------------------------------------------|--------|
-| Estrutura do repositório    | Pastas principais (dados, notebooks, scripts, app)                        | ✅ |
-| Coleta de microdados INEP   | Download 2010–2024: Censo Escolar, IDEB, Saeb, Enem, Enade, Encceja… mais demais microdados | ⬜ |
-| Integração bases INEP       | Merge Censo + IDEB + Saeb + Enem + demais microdados                      | ⬜ |
+| Estrutura do repositório    | Pastas principais (dados, notebooks, scripts, app)                         | ✅ |
+| Coleta de microdados INEP   | Download 2010–2024                                                         | ⬜ |
+| Integração bases INEP       | Merge Censo + IDEB + Saeb + Enem + demais microdados                       | ⬜ |
 | Notebook inicial (2010)     | Pipeline mínimo de processamento                                           | ✅ |
 | Análise exploratória (EDA)  | Estatísticas, gráficos e visualizações iniciais                            | ⬜ |
 | Estudos comparativos        | Rankings entre municípios, estados e escolas                               | ⬜ |
