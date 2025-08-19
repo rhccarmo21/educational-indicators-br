@@ -13,6 +13,31 @@ A proposta é consolidar diferentes conjuntos de dados em uma estrutura organiza
 
 ---
 
+## ❓ Questões que este projeto poderá responder
+
+Com base exclusivamente nos **microdados do INEP** já incorporados ao projeto, algumas das perguntas que poderão ser investigadas são:
+
+### 📊 Desempenho dos estudantes
+- Como variam as notas do **Enem** por região, estado e rede de ensino (pública x privada)?
+- Quais fatores escolares (infraestrutura, perfil docente, número de alunos) se relacionam com o desempenho no **Saeb** e no **Enade**?
+- Há desigualdades de desempenho entre grupos sociais (gênero, raça/cor, nível socioeconômico)?
+
+### 🎓 Acesso e permanência
+- Como evoluiu a matrícula nos diferentes níveis de ensino segundo o **Censo Escolar** e o **Censo da Educação Superior**?
+- Qual a taxa de participação no **Encceja** por faixa etária e perfil dos participantes?
+- Existem padrões de evasão ou retenção identificáveis nos microdados do Censo?
+
+### 🏫 Escolas e ambiente escolar
+- Qual é a distribuição de professores por formação e vínculo, segundo o **Censo dos Profissionais do Magistério**?
+- Existem diferenças significativas de infraestrutura entre escolas urbanas e rurais (**PNERA**, Censo Escolar)?
+- O que os dados da **Pesquisa de Ações Discriminatórias** revelam sobre desigualdades no ambiente escolar?
+
+### 🧑‍🏫 Perfil dos professores
+- Qual o perfil formativo e socioeconômico dos professores no Brasil, segundo o **Censo do Magistério** e o **Talis**?
+- Há indícios de relação entre condições de trabalho docente e resultados de aprendizagem dos estudantes?
+
+---
+
 ## 🗂️ Bases de Dados Utilizadas
 
 As bases de dados estão disponíveis na página oficial de microdados do INEP:  
