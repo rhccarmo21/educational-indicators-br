@@ -60,6 +60,22 @@ As bases de dados estão disponíveis na página oficial de microdados do INEP:
 
 ---
 
+## 🗓️ Cronograma do Projeto
+
+| Fase                        | Descrição                                                                 | Status |
+|-----------------------------|---------------------------------------------------------------------------|--------|
+| Estrutura do repositório    | Pastas principais (dados, notebooks, scripts, app)                        | ✅ |
+| Coleta de microdados INEP   | Download 2010–2024: Censo Escolar, IDEB, Saeb, Enem, Enade, Encceja… mais demais microdados | ⬜ |
+| Integração bases INEP       | Merge Censo + IDEB + Saeb + Enem + demais microdados                      | ⬜ |
+| Notebook inicial (2010)     | Pipeline mínimo de processamento                                           | ✅ |
+| Análise exploratória (EDA)  | Estatísticas, gráficos e visualizações iniciais                            | ⬜ |
+| Estudos comparativos        | Rankings entre municípios, estados e escolas                               | ⬜ |
+| Dashboards e relatórios     | Painéis interativos em Streamlit                                           | ⬜ |
+| Automação 2010–2024         | Scripts para processar todos os anos                                       | ⬜ |
+| Documentação final          | README e metodologia detalhada                                             | ⬜ |
+
+---
+
 ## 🔮 Extensões Futuras
 
 Este projeto, em versões futuras, poderá integrar também indicadores socioeconômicos como **Renda, IDH e Gini**, provenientes de fontes oficiais (IBGE, PNUD, IpeaData), com o objetivo de enriquecer as análises e permitir estudos de correlação entre desigualdade social e desempenho educacional.
